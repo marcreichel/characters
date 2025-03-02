@@ -17,6 +17,9 @@ fundamental. Period.
     <a href="https://github.com/marcreichel/characters">
         <img src="https://img.shields.io/badge/PHPStan-max-brightgreen.svg?style=for-the-badge" alt="Static Analysis Level">
     </a>
+    <a href="https://www.codefactor.io/repository/github/marcreichel/characters">
+        <img src="https://www.codefactor.io/repository/github/marcreichel/characters/badge?style=for-the-badge" alt="CodeFactor">
+    </a>
     <a href="https://packagist.org/packages/marcreichel/characters">
         <img src="https://img.shields.io/github/license/marcreichel/characters?style=for-the-badge" alt="License">
     </a>
