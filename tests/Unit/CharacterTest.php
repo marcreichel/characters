@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-it('should return expected character', function (string $className, string $expectedOutput, string $expectedHtml, string $expectedUrl, string $expectedJson) {
+it('should return expected character', function (string $className, string $expectedOutput, string $expectedHtml, string $expectedUrl, string $expectedJson): void {
     /** @var MarcReichel\Characters\Character $character */
     $character = new $className();
 

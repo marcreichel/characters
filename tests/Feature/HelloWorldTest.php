@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-it('should return "Hello World"', function () {
+it('should return "Hello World"', function (): void {
     $H = new MarcReichel\Characters\UppercaseH();
     $e = new MarcReichel\Characters\E();
     $l = new MarcReichel\Characters\L();

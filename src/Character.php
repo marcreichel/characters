@@ -7,7 +7,7 @@ namespace MarcReichel\Characters;
 use JsonSerializable;
 use Stringable;
 
-abstract class Character implements Stringable, JsonSerializable
+abstract class Character implements JsonSerializable, Stringable
 {
     abstract public function __invoke(): string;
 
