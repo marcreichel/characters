@@ -4,6 +4,21 @@ This package aims to fix the lacking support for object-oriented characters in P
 scripting-language and become a full-fledged object oriented programming language, having object-oriented characters is
 fundamental. Period.
 
+<p align="center">
+    <a href="https://packagist.org/packages/marcreichel/characters">
+        <img src="https://img.shields.io/packagist/v/marcreichel/characters?style=for-the-badge" alt="Packagist Version">
+    </a>
+    <a href="https://packagist.org/packages/marcreichel/characters">
+        <img src="https://img.shields.io/packagist/dt/marcreichel/characters?style=for-the-badge" alt="Packagist Downloads">
+    </a>
+    <a href="https://github.com/marcreichel/characters/actions/workflows/ci.yml">
+        <img src="https://img.shields.io/github/actions/workflow/status/marcreichel/characters/ci.yml?event=push&style=for-the-badge&logo=github&label=CI" alt="CI">
+    </a>
+    <a href="https://packagist.org/packages/marcreichel/characters">
+        <img src="https://img.shields.io/github/license/marcreichel/characters?style=for-the-badge" alt="License">
+    </a>
+</p>
+
 ## 🚀 Getting started
 
 ```shell
