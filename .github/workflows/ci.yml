@@ -11,8 +11,10 @@ on:
 jobs:
   lint:
     runs-on: ubuntu-latest
-    matrix:
-      php: [ 8.4 ]
+    strategy:
+      fail-fast: true
+      matrix:
+        php: [ 8.4 ]
     steps:
       - uses: actions/checkout@v4
       - name: Setup PHP
@@ -25,8 +27,10 @@ jobs:
       - run: composer lint
   static_analysis:
     runs-on: ubuntu-latest
-    matrix:
-      php: [ 8.4 ]
+    strategy:
+      fail-fast: true
+      matrix:
+        php: [ 8.4 ]
     steps:
       - uses: actions/checkout@v4
       - name: Setup PHP
@@ -39,8 +43,10 @@ jobs:
       - run: composer phpstan
   test:
     runs-on: ubuntu-latest
-    matrix:
-      php: [ 8.4 ]
+    strategy:
+      fail-fast: true
+      matrix:
+        php: [ 8.4 ]
     steps:
       - uses: actions/checkout@v4
       - name: Setup PHP
@@ -53,8 +59,10 @@ jobs:
       - run: composer test:coverage
   type_coverage:
     runs-on: ubuntu-latest
-    matrix:
-      php: [ 8.4 ]
+    strategy:
+      fail-fast: true
+      matrix:
+        php: [ 8.4 ]
     steps:
       - uses: actions/checkout@v4
       - name: Setup PHP
