@@ -1,0 +1,67 @@
+name: CI
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    matrix:
+      php: [ 8.4 ]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          coverage: none
+      - name: Install dependencies
+        run: composer install
+      - run: composer lint
+  static_analysis:
+    runs-on: ubuntu-latest
+    matrix:
+      php: [ 8.4 ]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          coverage: none
+      - name: Install dependencies
+        run: composer install
+      - run: composer phpstan
+  test:
+    runs-on: ubuntu-latest
+    matrix:
+      php: [ 8.4 ]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          coverage: xdebug
+      - name: Install dependencies
+        run: composer install
+      - run: composer test:coverage
+  type_coverage:
+    runs-on: ubuntu-latest
+    matrix:
+      php: [ 8.4 ]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          coverage: xdebug
+      - name: Install dependencies
+        run: composer install
+      - run: composer test:types
