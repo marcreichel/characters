@@ -14,6 +14,9 @@ fundamental. Period.
     <a href="https://github.com/marcreichel/characters/actions/workflows/ci.yml">
         <img src="https://img.shields.io/github/actions/workflow/status/marcreichel/characters/ci.yml?event=push&style=for-the-badge&logo=github&label=CI" alt="CI">
     </a>
+    <a href="https://github.com/marcreichel/characters">
+        <img src="https://img.shields.io/badge/PHPStan-max-brightgreen.svg?style=for-the-badge" alt="Static Analysis Level">
+    </a>
     <a href="https://packagist.org/packages/marcreichel/characters">
         <img src="https://img.shields.io/github/license/marcreichel/characters?style=for-the-badge" alt="License">
     </a>
