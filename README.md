@@ -43,7 +43,7 @@ For HTML-save output.
 ```php
 use MarcReichel\Characters\{DivisionSign,Number0,Number2,Number5,Space};
 
-new DivisionSign()->toHtml(); // -> "&amp;divide;"
+new DivisionSign()->toHtml(); // -> "&divide;"
 new Number0()->toHtml();      // -> "0"
 new Number2()->toHtml();      // -> "2"
 new Number5()->toHtml();      // -> "5"
