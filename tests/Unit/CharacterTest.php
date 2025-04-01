@@ -113,6 +113,7 @@ dataset('characters', [
     [MarcReichel\Characters\EqualSign::class, '=', '=', '%3D', '='],
 
     [MarcReichel\Characters\PipeSign::class, '|', '|', '%7C', '|'],
+    [MarcReichel\Characters\HashSign::class, '#', '#', '%23', '#'],
 
     [MarcReichel\Characters\DollarSign::class, '$', '$', '%24', '$'],
     [MarcReichel\Characters\EuroSign::class, '€', '&euro;', '%E2%82%AC', '\u20ac'],
